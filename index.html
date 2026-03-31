@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Análise de Números</h1>
+    </header>
+
+    <main>
+        <section class="card">
+            <div class="input-section">
+                <label for="txtn">Número (1 a 100):</label>
+                <input type="number" id="txtn" class="input">
+                <button class="button" onclick="lancar()">Adicionar</button>
+            </div>
+
+            <div class="list-section">
+                <select id="txtals" size="8"></select>
+            </div>
+
+            <div class="action-section">
+                <button class="button" onclick="analisar()">Finalizar Análise</button>
+                <button class="button button-clear" onclick="limpar()">Limpar Tudo</button>
+            </div>
+
+            <div id="msgErro" class="error-message"></div>
+            <div id="res" class="result"></div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 Ryan FUTURO
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

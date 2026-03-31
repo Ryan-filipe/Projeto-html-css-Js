@@ -1,0 +1,152 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Body ===== */
+body {
+    background: linear-gradient(to bottom, #131921, #232F3E);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #FF9900;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #131921;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+/* ===== Main Card ===== */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 25px 30px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* ===== Inputs e Botões ===== */
+.input-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 80px;
+    text-align: center;
+}
+
+.button {
+    padding: 8px 16px;
+    background-color: #FF9900;
+    color: #131921;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    background-color: #FFA733;
+    transform: translateY(-2px);
+}
+
+.button-clear {
+    background-color: #E53935;
+    color: #fff;
+}
+
+.button-clear:hover {
+    background-color: #FF6F61;
+}
+
+/* ===== Lista ===== */
+.list-section select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* ===== Mensagens ===== */
+.error-message {
+    color: #E53935;
+    font-weight: bold;
+    margin-bottom: 10px;
+    min-height: 24px;
+    text-align: center;
+    animation: none;
+}
+
+.error-message.shake {
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* ===== Resultados ===== */
+.result p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #131921;
+    color: #fff;
+    font-size: 0.9em;
+    box-shadow: 0 -3px 6px rgba(0,0,0,0.3);
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 480px) {
+    .input-section {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+}
