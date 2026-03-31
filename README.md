@@ -30,4 +30,4 @@ Este projeto é um analisador de números em JavaScript, HTML e CSS, inspirado e
 - Botões com cores destacadas (adicionar = laranja, limpar = vermelho)
 - Responsivo para mobile
 
-## Estrutura de arquivos
+
